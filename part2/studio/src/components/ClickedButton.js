@@ -1,4 +1,9 @@
+import "./styling.css";
+
 function ClickedButton() {
+  function handleClick() {
+    alert("The pin has been removed from the board.");
+  }
   return;
 }
 
