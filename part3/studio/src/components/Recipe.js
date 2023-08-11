@@ -1,7 +1,7 @@
 const RecipeAuthor = () => {
-   let authorLink = "";
-   let authorPhoto = "";
-   let authorName = "";
+   let authorLink = "Kevin Hammel";
+   let authorPhoto = "Batman.jpeg";
+   let authorName = "Kevin Hammel";
 
    return (
       <div>
@@ -15,7 +15,11 @@ const RecipeAuthor = () => {
 }
 
 const RecipeIngredients = () => {
-   const ingredients = [];
+   const ingredients = ["2   12-ounce packages low-fat baked breaded chicken-breast tenderloins or cutlets",
+   "1  teaspoon dried oregano",
+   "1 1/2 cups jarred marinara sauce",
+   "4  tablespoons freshly grated Parmesan",
+   "Freshly ground black pepper"];
    return(
       <div>
          <h3>Recipe Ingredients</h3>
@@ -34,8 +38,8 @@ const RecipeDescription = () => {
    return (
       <div> 
          <div>
-            <h1></h1>
-            <p></p>
+            <h1>"Chicken Parmesan"</h1>
+            <p>"This easy chicken parmesan recipe calls for just 5 ingredients, including black pepper, and 20 minutes from prep to table."</p>
          </div>
          <div className="recipePhotoBlock">
             <RecipeIngredients />
@@ -47,7 +51,8 @@ const RecipeDescription = () => {
 
 const RecipePhoto = () => {
    return (
-      <img src="" alt="" className="imageUpdates"/>
+      <img src="https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F19%2F2005%2F02%2F21%2Fchicken-parmesan-rs-1031603-4x3-1-2000.jpg"
+        alt="" className="imageUpdates"/>
    );
 }
 
